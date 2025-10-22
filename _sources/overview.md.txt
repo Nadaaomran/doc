@@ -2,7 +2,7 @@
 
 Welcome to **Delve Analytics** - the comprehensive platform for wearable data analysis that transforms raw sensor data into meaningful health insights.
 
-## 🎯 What is Delve Analytics?
+## What is Delve Analytics?
 
 Delve Analytics is a cutting-edge web application designed to bridge the gap between complex wearable data and actionable health insights. Instead of spending months learning literature and implementing analytics methods from scratch, researchers and healthcare professionals can now access **ready-to-use, scientifically-validated analytics packages** that provide immediate, meaningful results.
 
@@ -20,7 +20,7 @@ Traditional wearable data analysis requires:
 - ✅ **Ready-to-use implementations** with minimal setup
 - ✅ **Comprehensive documentation** explaining the science behind each method
 
-## 🔬 Our Analytics Modules
+## Our Analytics Modules
 
 ### ❤️ Heart Analytics
 Advanced cardiovascular analysis from heart rate data:
@@ -44,7 +44,7 @@ Extract comprehensive sleep insights from wearable data:
 
 
 
-## 🚀 Getting Started
+## Getting Started
 
 Each analytics module is designed to be:
 - **Plug-and-play** - Minimal configuration required
@@ -52,7 +52,7 @@ Each analytics module is designed to be:
 - **Scientifically-validated** - Based on peer-reviewed research
 - **Interpretable** - Results come with clinical context
 
-## 📖 Documentation Structure
+## Documentation Structure
 
 This documentation provides comprehensive coverage of:
 
@@ -68,7 +68,7 @@ Each section includes:
 - **Interpretation Guide** - How to understand and use the results
 - **References** - Supporting scientific literature
 
-## 🎯 Target Audience
+## Target Audience
 
 Delve Analytics is designed for:
 - **Clinical Researchers** conducting wearable device studies
