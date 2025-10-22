@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heart Analytics &mdash; Delve Analytics  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=d28bd4e6" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Activity Analytics" href="activity.html" />
+    <link rel="prev" title="Delve Analytics Documentation" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Delve Analytics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Delve Analytics Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#what-is-delve-analytics">🎯 What is Delve Analytics?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#why-delve-analytics">Why Delve Analytics?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#our-analytics-modules">🔬 Our Analytics Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#heart-analytics">❤️ Heart Analytics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#activity-analytics">📊 Activity Analytics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#sleep-analytics">😴 Sleep Analytics</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#getting-started">🚀 Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#documentation-structure">📖 Documentation Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#target-audience">🎯 Target Audience</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Heart Analytics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#core-methods">Core Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#heart-rate-variability-hrv-analysis">1. Heart Rate Variability (HRV) Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ecg-analysis-and-pqrst-detection">2. ECG Analysis and PQRST Detection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#poincare-plot-analysis">3. Poincaré Plot Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#detrended-fluctuation-analysis-dfa">5. Detrended Fluctuation Analysis (DFA)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sample-entropy-analysis">6. Sample Entropy Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-requirements">Data Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#input-data">Input Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-quality-considerations">Data Quality Considerations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#clinical-applications">Clinical Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#research-applications">Research Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Clinical Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#interpretation-guidelines">Interpretation Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hrv-norms-rmssd-ms">HRV Norms (RMSSD, ms)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#heart-rate-zone-guidelines">Heart Rate Zone Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dfa-interpretation">DFA α Interpretation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ecg-quality-indicators">ECG Quality Indicators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#health-monitoring-applications">Health Monitoring Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#daily-hrv-tracking">Daily HRV Tracking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clinical-monitoring">Clinical Monitoring</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="activity.html">Activity Analytics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#core-methods">Core Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#physical-activity-classification">1. Physical Activity Classification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#gait-analysis">2. Gait Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#energy-expenditure-analysis">3. Energy Expenditure Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#circadian-activity-patterns">4. Circadian Activity Patterns</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#data-requirements">Data Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#input-data">Input Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#data-quality-considerations">Data Quality Considerations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#clinical-applications">Clinical Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#research-applications">Research Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#id1">Clinical Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#interpretation-guidelines">Interpretation Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#activity-intensity-levels">Activity Intensity Levels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#gait-quality-indicators">Gait Quality Indicators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#circadian-health-markers">Circadian Health Markers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sleep.html">Sleep Analytics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sleep.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sleep.html#core-methods">Core Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#sleep-efficiency-analysis">1. Sleep Efficiency Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#sleep-architecture-analysis">2. Sleep Architecture Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#sleep-fragmentation-index">3. Sleep Fragmentation Index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#circadian-sleep-patterns">4. Circadian Sleep Patterns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#heart-rate-during-sleep">5. Heart Rate During Sleep</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sleep.html#data-requirements">Data Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#input-data">Input Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#data-quality-considerations">Data Quality Considerations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sleep.html#clinical-applications">Clinical Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#research-applications">Research Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#id1">Clinical Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sleep.html#interpretation-guidelines">Interpretation Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#sleep-efficiency-standards">Sleep Efficiency Standards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#sleep-architecture-norms-adults">Sleep Architecture Norms (Adults)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#fragmentation-indicators">Fragmentation Indicators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#circadian-health-markers">Circadian Health Markers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sleep.html#sleep-health-recommendations">Sleep Health Recommendations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#for-optimal-sleep-quality">For Optimal Sleep Quality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sleep.html#red-flags-for-sleep-disorders">Red Flags for Sleep Disorders</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sleep.html#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Delve Analytics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Heart Analytics</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/heart.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="heart-analytics">
+<h1>Heart Analytics<a class="headerlink" href="#heart-analytics" title="Link to this heading"></a></h1>
+<p>Advanced cardiovascular analysis from heart rate and ECG data, providing comprehensive insights into cardiac health and autonomic function.</p>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>Heart analytics in Delve Analytics transforms raw heart rate and ECG data into clinically-relevant cardiovascular metrics that are essential for understanding cardiac health, autonomic nervous system function, and exercise physiology. Our methods are based on established cardiovascular research protocols and provide actionable insights for researchers and healthcare professionals.</p>
+</section>
+<section id="core-methods">
+<h2>Core Methods<a class="headerlink" href="#core-methods" title="Link to this heading"></a></h2>
+<section id="heart-rate-variability-hrv-analysis">
+<h3>1. Heart Rate Variability (HRV) Analysis<a class="headerlink" href="#heart-rate-variability-hrv-analysis" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> Variability in time intervals between consecutive heartbeats, reflecting autonomic nervous system function</p>
+<p><strong>Biological significance:</strong></p>
+<p><strong>Technical implementation:</strong></p>
+<p><strong>Key metrics:</strong></p>
+</section>
+<section id="ecg-analysis-and-pqrst-detection">
+<h3>2. ECG Analysis and PQRST Detection<a class="headerlink" href="#ecg-analysis-and-pqrst-detection" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> Detailed analysis of cardiac electrical activity including P, QRS, and T wave characteristics</p>
+<p><strong>Biological significance:</strong></p>
+<p><strong>Technical implementation:</strong></p>
+<p><strong>Key metrics:</strong></p>
+</section>
+<section id="poincare-plot-analysis">
+<h3>3. Poincaré Plot Analysis<a class="headerlink" href="#poincare-plot-analysis" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> Non-linear analysis of heart rate variability using scatter plots of consecutive RR intervals</p>
+<p><strong>Biological significance:</strong></p>
+<p><strong>Technical implementation:</strong></p>
+<p><strong>Key metrics:</strong></p>
+</section>
+<section id="detrended-fluctuation-analysis-dfa">
+<h3>5. Detrended Fluctuation Analysis (DFA)<a class="headerlink" href="#detrended-fluctuation-analysis-dfa" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> Fractal scaling properties of heart rate variability, indicating long-range correlations</p>
+<p><strong>Biological significance:</strong></p>
+<p><strong>Technical implementation:</strong></p>
+<p><strong>Key metrics:</strong></p>
+</section>
+<section id="sample-entropy-analysis">
+<h3>6. Sample Entropy Analysis<a class="headerlink" href="#sample-entropy-analysis" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> Complexity and regularity of heart rate patterns, indicating system adaptability</p>
+<p><strong>Biological significance:</strong></p>
+<p><strong>Technical implementation:</strong></p>
+<p><strong>Key metrics:</strong></p>
+</section>
+</section>
+<section id="data-requirements">
+<h2>Data Requirements<a class="headerlink" href="#data-requirements" title="Link to this heading"></a></h2>
+<section id="input-data">
+<h3>Input Data<a class="headerlink" href="#input-data" title="Link to this heading"></a></h3>
+</section>
+<section id="data-quality-considerations">
+<h3>Data Quality Considerations<a class="headerlink" href="#data-quality-considerations" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="clinical-applications">
+<h2>Clinical Applications<a class="headerlink" href="#clinical-applications" title="Link to this heading"></a></h2>
+<section id="research-applications">
+<h3>Research Applications<a class="headerlink" href="#research-applications" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Cardiovascular health studies</strong> and risk assessment</p></li>
+<li><p><strong>Exercise physiology research</strong> and training monitoring</p></li>
+<li><p><strong>Stress and recovery studies</strong> using HRV analysis</p></li>
+<li><p><strong>Aging and disease progression</strong> research</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>Clinical Applications<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Cardiac rehabilitation</strong> monitoring and progress tracking</p></li>
+<li><p><strong>Stress management</strong> and autonomic function assessment</p></li>
+<li><p><strong>Exercise prescription</strong> and intensity monitoring</p></li>
+<li><p><strong>Cardiovascular risk stratification</strong> using HRV metrics</p></li>
+</ul>
+</section>
+</section>
+<section id="interpretation-guidelines">
+<h2>Interpretation Guidelines<a class="headerlink" href="#interpretation-guidelines" title="Link to this heading"></a></h2>
+<section id="hrv-norms-rmssd-ms">
+<h3>HRV Norms (RMSSD, ms)<a class="headerlink" href="#hrv-norms-rmssd-ms" title="Link to this heading"></a></h3>
+</section>
+<section id="heart-rate-zone-guidelines">
+<h3>Heart Rate Zone Guidelines<a class="headerlink" href="#heart-rate-zone-guidelines" title="Link to this heading"></a></h3>
+</section>
+<section id="dfa-interpretation">
+<h3>DFA α Interpretation<a class="headerlink" href="#dfa-interpretation" title="Link to this heading"></a></h3>
+</section>
+<section id="ecg-quality-indicators">
+<h3>ECG Quality Indicators<a class="headerlink" href="#ecg-quality-indicators" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="health-monitoring-applications">
+<h2>Health Monitoring Applications<a class="headerlink" href="#health-monitoring-applications" title="Link to this heading"></a></h2>
+<section id="daily-hrv-tracking">
+<h3>Daily HRV Tracking<a class="headerlink" href="#daily-hrv-tracking" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Monitor recovery status and training readiness</p></li>
+<li><p>Detect early signs of overtraining or illness</p></li>
+<li><p>Track stress levels and autonomic balance</p></li>
+<li><p>Optimize training and recovery protocols</p></li>
+</ul>
+</section>
+<section id="clinical-monitoring">
+<h3>Clinical Monitoring<a class="headerlink" href="#clinical-monitoring" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Assess cardiovascular health and risk</p></li>
+<li><p>Monitor medication effects on heart rhythm</p></li>
+<li><p>Track rehabilitation progress</p></li>
+<li><p>Evaluate treatment effectiveness</p></li>
+</ul>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<hr class="docutils" />
+<p><em>Ready to analyze your heart data? Contact our team to learn more about implementing these methods in your research or clinical practice.</em></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="overview.html" class="btn btn-neutral float-left" title="Delve Analytics Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="activity.html" class="btn btn-neutral float-right" title="Activity Analytics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Delve Health.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

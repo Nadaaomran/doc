@@ -1,0 +1,106 @@
+# Activity Analytics
+
+Transform raw accelerometer data into comprehensive physical activity insights using scientifically-validated methods.
+
+## Overview
+
+Activity analytics in Delve Analytics converts 3-axis accelerometer data into meaningful physical activity metrics that are essential for understanding human movement patterns, energy expenditure, and health outcomes. Our methods are based on established research protocols and provide clinically-relevant insights for researchers and healthcare professionals.
+
+## Core Methods
+
+### 1. Physical Activity Classification
+
+**What it measures:** Classification of activity intensity levels (Sedentary, Light, Moderate, Vigorous)
+
+**Biological significance:** 
+
+
+**Technical implementation:**
+
+
+**Key metrics:**
+
+### 2. Gait Analysis
+
+**What it measures:** Walking and running patterns including step detection, stride length, cadence, and gait quality metrics
+
+**Biological significance:**
+
+
+**Technical implementation:**
+
+
+**Key metrics:**
+
+### 3. Energy Expenditure Analysis
+
+**What it measures:** Metabolic equivalent (MET) estimation and calorie burn calculations
+
+**Biological significance:**
+
+
+**Technical implementation:**
+
+
+**Key metrics:**
+
+
+### 4. Circadian Activity Patterns
+
+**What it measures:** Daily activity rhythm analysis including M10, L5, and Relative Amplitude
+
+**Biological significance:**
+
+
+**Technical implementation:**
+
+
+**Key metrics:**
+
+
+## Data Requirements
+
+### Input Data
+
+
+### Data Quality Considerations
+
+
+## Clinical Applications
+
+### Research Applications
+- **Epidemiological studies** of physical activity and health outcomes
+- **Intervention studies** measuring activity changes over time
+- **Population health** monitoring and surveillance
+- **Biomarker discovery** linking activity patterns to health indicators
+
+### Clinical Applications
+- **Cardiac rehabilitation** monitoring and progress tracking
+- **Diabetes management** through activity-based interventions
+- **Fall risk assessment** using gait quality metrics
+- **Sleep-wake disorder** evaluation through circadian analysis
+
+## Interpretation Guidelines
+
+### Activity Intensity Levels
+- **Sedentary:** <1.5 METs, associated with health risks
+- **Light:** 1.5-3.0 METs, beneficial for general health
+- **Moderate:** 3.0-6.0 METs, meets WHO physical activity guidelines
+- **Vigorous:** >6.0 METs, provides maximum health benefits
+
+### Gait Quality Indicators
+- **Normal cadence:** 100-120 steps/minute for adults
+- **Healthy asymmetry:** <5% difference between left/right steps
+- **Low variability:** <10% coefficient of variation indicates good motor control
+
+### Circadian Health Markers
+- **Strong RA:** >0.8 indicates robust circadian patterns
+- **Low IV:** <0.5 suggests well-consolidated activity periods
+- **High IS:** >0.6 indicates consistent daily routines
+
+## References
+
+
+---
+
+*Ready to analyze your activity data? Contact our team to learn more about implementing these methods in your research or clinical practice.*

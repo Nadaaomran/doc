@@ -1,0 +1,337 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sleep Analytics &mdash; Delve Analytics  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=d28bd4e6" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Activity Analytics" href="activity.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Delve Analytics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Delve Analytics Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#what-is-delve-analytics">🎯 What is Delve Analytics?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#why-delve-analytics">Why Delve Analytics?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#our-analytics-modules">🔬 Our Analytics Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#heart-analytics">❤️ Heart Analytics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#activity-analytics">📊 Activity Analytics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#sleep-analytics">😴 Sleep Analytics</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#getting-started">🚀 Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#documentation-structure">📖 Documentation Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#target-audience">🎯 Target Audience</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="heart.html">Heart Analytics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="heart.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heart.html#core-methods">Core Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#heart-rate-variability-hrv-analysis">1. Heart Rate Variability (HRV) Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#ecg-analysis-and-pqrst-detection">2. ECG Analysis and PQRST Detection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#poincare-plot-analysis">3. Poincaré Plot Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#detrended-fluctuation-analysis-dfa">5. Detrended Fluctuation Analysis (DFA)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#sample-entropy-analysis">6. Sample Entropy Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="heart.html#data-requirements">Data Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#input-data">Input Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#data-quality-considerations">Data Quality Considerations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="heart.html#clinical-applications">Clinical Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#research-applications">Research Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#id1">Clinical Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="heart.html#interpretation-guidelines">Interpretation Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#hrv-norms-rmssd-ms">HRV Norms (RMSSD, ms)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#heart-rate-zone-guidelines">Heart Rate Zone Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#dfa-interpretation">DFA α Interpretation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#ecg-quality-indicators">ECG Quality Indicators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="heart.html#health-monitoring-applications">Health Monitoring Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#daily-hrv-tracking">Daily HRV Tracking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="heart.html#clinical-monitoring">Clinical Monitoring</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="heart.html#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="activity.html">Activity Analytics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#core-methods">Core Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#physical-activity-classification">1. Physical Activity Classification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#gait-analysis">2. Gait Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#energy-expenditure-analysis">3. Energy Expenditure Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#circadian-activity-patterns">4. Circadian Activity Patterns</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#data-requirements">Data Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#input-data">Input Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#data-quality-considerations">Data Quality Considerations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#clinical-applications">Clinical Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#research-applications">Research Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#id1">Clinical Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#interpretation-guidelines">Interpretation Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#activity-intensity-levels">Activity Intensity Levels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#gait-quality-indicators">Gait Quality Indicators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity.html#circadian-health-markers">Circadian Health Markers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity.html#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sleep Analytics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#core-methods">Core Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sleep-efficiency-analysis">1. Sleep Efficiency Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sleep-architecture-analysis">2. Sleep Architecture Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sleep-fragmentation-index">3. Sleep Fragmentation Index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#circadian-sleep-patterns">4. Circadian Sleep Patterns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#heart-rate-during-sleep">5. Heart Rate During Sleep</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-requirements">Data Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#input-data">Input Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-quality-considerations">Data Quality Considerations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#clinical-applications">Clinical Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#research-applications">Research Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Clinical Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#interpretation-guidelines">Interpretation Guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sleep-efficiency-standards">Sleep Efficiency Standards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sleep-architecture-norms-adults">Sleep Architecture Norms (Adults)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fragmentation-indicators">Fragmentation Indicators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#circadian-health-markers">Circadian Health Markers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sleep-health-recommendations">Sleep Health Recommendations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#for-optimal-sleep-quality">For Optimal Sleep Quality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#red-flags-for-sleep-disorders">Red Flags for Sleep Disorders</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Delve Analytics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Sleep Analytics</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/sleep.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sleep-analytics">
+<h1>Sleep Analytics<a class="headerlink" href="#sleep-analytics" title="Link to this heading"></a></h1>
+<p>Comprehensive sleep analysis from wearable device data, providing insights into sleep quality, architecture, and circadian patterns.</p>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>Sleep analytics in Delve Analytics transforms raw sleep data into clinically-relevant metrics that are essential for understanding sleep health, diagnosing sleep disorders, and monitoring treatment outcomes. Our methods provide actionable insights for researchers and healthcare professionals.</p>
+</section>
+<section id="core-methods">
+<h2>Core Methods<a class="headerlink" href="#core-methods" title="Link to this heading"></a></h2>
+<section id="sleep-efficiency-analysis">
+<h3>1. Sleep Efficiency Analysis<a class="headerlink" href="#sleep-efficiency-analysis" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> The percentage of time in bed spent actually sleeping</p>
+<p><strong>Biological significance:</strong></p>
+<ul class="simple">
+<li><p><strong>Sleep efficiency</strong> is a key indicator of sleep quality and restorative sleep</p></li>
+<li><p><strong>Low sleep efficiency</strong> (&lt;85%) is associated with daytime fatigue, cognitive impairment, and increased health risks</p></li>
+<li><p><strong>High sleep efficiency</strong> (&gt;90%) indicates good sleep consolidation and quality</p></li>
+<li><p><strong>Sleep fragmentation</strong> reduces sleep efficiency and is linked to cardiovascular and metabolic disorders</p></li>
+</ul>
+<p><strong>Technical implementation:</strong></p>
+<ul class="simple">
+<li><p><strong>Sleep efficiency calculation:</strong> (Total Sleep Time / Time in Bed) × 100</p></li>
+<li><p><strong>Time in bed computation:</strong> Sleep Onset Latency + Total Sleep Time + Wake After Sleep Onset + Latency to Out of Bed</p></li>
+<li><p><strong>Multi-day aggregation</strong> for longitudinal sleep pattern analysis</p></li>
+</ul>
+<p><strong>Key metrics:</strong></p>
+</section>
+<section id="sleep-architecture-analysis">
+<h3>2. Sleep Architecture Analysis<a class="headerlink" href="#sleep-architecture-analysis" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> Distribution and quality of different sleep stages (Deep, Light, REM, Wake)</p>
+<p><strong>Biological significance:</strong></p>
+<p><strong>Technical implementation:</strong></p>
+<p><strong>Key metrics:</strong></p>
+</section>
+<section id="sleep-fragmentation-index">
+<h3>3. Sleep Fragmentation Index<a class="headerlink" href="#sleep-fragmentation-index" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> The frequency of sleep stage transitions</p>
+<p><strong>Biological significance:</strong></p>
+<p><strong>Technical implementation:</strong></p>
+<p><strong>Key metrics:</strong></p>
+</section>
+<section id="circadian-sleep-patterns">
+<h3>4. Circadian Sleep Patterns<a class="headerlink" href="#circadian-sleep-patterns" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> Sleep timing variability and circadian rhythm analysis</p>
+<p><strong>Biological significance:</strong></p>
+<p><strong>Technical implementation:</strong></p>
+<p><strong>Key metrics:</strong></p>
+</section>
+<section id="heart-rate-during-sleep">
+<h3>5. Heart Rate During Sleep<a class="headerlink" href="#heart-rate-during-sleep" title="Link to this heading"></a></h3>
+<p><strong>What it measures:</strong> Cardiovascular activity patterns during different sleep stages</p>
+<p><strong>Biological significance:</strong></p>
+<p><strong>Technical implementation:</strong></p>
+<p><strong>Key metrics:</strong></p>
+</section>
+</section>
+<section id="data-requirements">
+<h2>Data Requirements<a class="headerlink" href="#data-requirements" title="Link to this heading"></a></h2>
+<section id="input-data">
+<h3>Input Data<a class="headerlink" href="#input-data" title="Link to this heading"></a></h3>
+</section>
+<section id="data-quality-considerations">
+<h3>Data Quality Considerations<a class="headerlink" href="#data-quality-considerations" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="clinical-applications">
+<h2>Clinical Applications<a class="headerlink" href="#clinical-applications" title="Link to this heading"></a></h2>
+<section id="research-applications">
+<h3>Research Applications<a class="headerlink" href="#research-applications" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Sleep disorder studies</strong> and treatment monitoring</p></li>
+<li><p><strong>Circadian rhythm research</strong> and chronobiology studies</p></li>
+<li><p><strong>Health outcome associations</strong> with sleep quality metrics</p></li>
+<li><p><strong>Intervention studies</strong> measuring sleep improvements</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>Clinical Applications<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Sleep medicine</strong> practice and patient monitoring</p></li>
+<li><p><strong>Mental health</strong> assessment through sleep patterns</p></li>
+<li><p><strong>Cardiovascular health</strong> evaluation via sleep HR analysis</p></li>
+<li><p><strong>Aging and dementia</strong> research through sleep architecture changes</p></li>
+</ul>
+</section>
+</section>
+<section id="interpretation-guidelines">
+<h2>Interpretation Guidelines<a class="headerlink" href="#interpretation-guidelines" title="Link to this heading"></a></h2>
+<section id="sleep-efficiency-standards">
+<h3>Sleep Efficiency Standards<a class="headerlink" href="#sleep-efficiency-standards" title="Link to this heading"></a></h3>
+</section>
+<section id="sleep-architecture-norms-adults">
+<h3>Sleep Architecture Norms (Adults)<a class="headerlink" href="#sleep-architecture-norms-adults" title="Link to this heading"></a></h3>
+</section>
+<section id="fragmentation-indicators">
+<h3>Fragmentation Indicators<a class="headerlink" href="#fragmentation-indicators" title="Link to this heading"></a></h3>
+</section>
+<section id="circadian-health-markers">
+<h3>Circadian Health Markers<a class="headerlink" href="#circadian-health-markers" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="sleep-health-recommendations">
+<h2>Sleep Health Recommendations<a class="headerlink" href="#sleep-health-recommendations" title="Link to this heading"></a></h2>
+<section id="for-optimal-sleep-quality">
+<h3>For Optimal Sleep Quality<a class="headerlink" href="#for-optimal-sleep-quality" title="Link to this heading"></a></h3>
+</section>
+<section id="red-flags-for-sleep-disorders">
+<h3>Red Flags for Sleep Disorders<a class="headerlink" href="#red-flags-for-sleep-disorders" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<hr class="docutils" />
+<p><em>Ready to analyze your sleep data? Contact our team to learn more about implementing these methods in your research or clinical practice.</em></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="activity.html" class="btn btn-neutral float-left" title="Activity Analytics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Delve Health.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

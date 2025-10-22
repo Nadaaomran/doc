@@ -1,0 +1,130 @@
+# Sleep Analytics
+
+Comprehensive sleep analysis from wearable device data, providing insights into sleep quality, architecture, and circadian patterns.
+
+## Overview
+
+Sleep analytics in Delve Analytics transforms raw sleep data into clinically-relevant metrics that are essential for understanding sleep health, diagnosing sleep disorders, and monitoring treatment outcomes. Our methods provide actionable insights for researchers and healthcare professionals.
+
+## Core Methods
+
+### 1. Sleep Efficiency Analysis
+
+**What it measures:** The percentage of time in bed spent actually sleeping
+
+**Biological significance:**
+- **Sleep efficiency** is a key indicator of sleep quality and restorative sleep
+- **Low sleep efficiency** (<85%) is associated with daytime fatigue, cognitive impairment, and increased health risks
+- **High sleep efficiency** (>90%) indicates good sleep consolidation and quality
+- **Sleep fragmentation** reduces sleep efficiency and is linked to cardiovascular and metabolic disorders
+
+**Technical implementation:**
+- **Sleep efficiency calculation:** (Total Sleep Time / Time in Bed) × 100
+- **Time in bed computation:** Sleep Onset Latency + Total Sleep Time + Wake After Sleep Onset + Latency to Out of Bed
+- **Multi-day aggregation** for longitudinal sleep pattern analysis
+
+**Key metrics:**
+
+
+### 2. Sleep Architecture Analysis
+
+**What it measures:** Distribution and quality of different sleep stages (Deep, Light, REM, Wake)
+
+**Biological significance:**
+
+
+**Technical implementation:**
+
+
+**Key metrics:**
+
+
+### 3. Sleep Fragmentation Index
+
+**What it measures:** The frequency of sleep stage transitions
+
+**Biological significance:**
+
+
+**Technical implementation:**
+
+
+**Key metrics:**
+
+
+### 4. Circadian Sleep Patterns
+
+**What it measures:** Sleep timing variability and circadian rhythm analysis
+
+**Biological significance:**
+
+
+**Technical implementation:**
+
+
+**Key metrics:**
+
+
+### 5. Heart Rate During Sleep
+
+**What it measures:** Cardiovascular activity patterns during different sleep stages
+
+**Biological significance:**
+
+
+**Technical implementation:**
+
+
+**Key metrics:**
+
+
+## Data Requirements
+
+### Input Data
+
+
+### Data Quality Considerations
+
+
+## Clinical Applications
+
+### Research Applications
+- **Sleep disorder studies** and treatment monitoring
+- **Circadian rhythm research** and chronobiology studies
+- **Health outcome associations** with sleep quality metrics
+- **Intervention studies** measuring sleep improvements
+
+### Clinical Applications
+- **Sleep medicine** practice and patient monitoring
+- **Mental health** assessment through sleep patterns
+- **Cardiovascular health** evaluation via sleep HR analysis
+- **Aging and dementia** research through sleep architecture changes
+
+## Interpretation Guidelines
+
+### Sleep Efficiency Standards
+
+
+### Sleep Architecture Norms (Adults)
+
+
+### Fragmentation Indicators
+
+
+### Circadian Health Markers
+
+
+## Sleep Health Recommendations
+
+### For Optimal Sleep Quality
+
+
+### Red Flags for Sleep Disorders
+
+
+## References
+
+
+---
+
+*Ready to analyze your sleep data? Contact our team to learn more about implementing these methods in your research or clinical practice.*
