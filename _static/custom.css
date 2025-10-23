@@ -187,3 +187,42 @@
     text-align: center;
     padding: 20px 10px;
 }
+
+/* Hide the "View page source" button completely */
+.rst-badge {
+    display: none !important;
+}
+
+/* Hide any remaining source links */
+.rst-content .viewcode-link {
+    display: none !important;
+}
+
+/* Hide footer attribution */
+.rst-footer-buttons .rst-badge {
+    display: none !important;
+}
+
+/* Hide the "View page source" link in breadcrumbs */
+.wy-breadcrumbs-aside {
+    display: none !important;
+}
+
+/* Hide copyright and Sphinx attribution in footer */
+div[role="contentinfo"] {
+    display: none !important;
+}
+
+/* Hide the entire footer attribution section */
+footer div:not(.rst-footer-buttons) {
+    display: none !important;
+}
+
+/* Alternative approach - hide specific text */
+footer p:contains("Copyright") {
+    display: none !important;
+}
+
+footer:contains("Built with") {
+    display: none !important;
+}
